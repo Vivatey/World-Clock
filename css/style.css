@@ -31,7 +31,7 @@ footer {
   margin-top: 20px;
 }
 
-P {
+footer P {
   font-size: 15px;
   color: rgba(0, 0, 0, 0.19);
 }
@@ -78,4 +78,8 @@ P {
 
 .fa-github {
   color: #000;
+}
+
+.fa-github:hover {
+  color: #ffffff;
 }
