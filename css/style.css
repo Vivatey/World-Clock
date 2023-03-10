@@ -1,12 +1,13 @@
 body {
   background-color: #b4b6cb;
-  font-family: sans-serif;
+  font-family: 'Italiana', serif;
 }
 
 h1 {
   text-align: center;
-  font-family: sans-serif;
-  font-size: 36px;
+  font-family: 'Italiana', serif;
+  font-size: 45px;
+  margin-top: 20px;
 }
 
 h2 {
@@ -20,6 +21,8 @@ select {
   font-size: 18px;
   border-radius: 5px;
   padding: 10px;
+  font-family: 'Italiana', serif;
+  font-weight: bold;
 }
 
 em {
@@ -33,7 +36,7 @@ footer {
 
 footer P {
   font-size: 15px;
-  color: rgba(0, 0, 0, 0.19);
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .container {
