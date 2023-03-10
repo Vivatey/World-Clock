@@ -1,69 +1,81 @@
 body {
   background-color: #b4b6cb;
+  font-family: sans-serif;
 }
 
-.container {
-  max-width: 700px;
-  margin: 0 auto;
-  background: white;
+h1 {
   text-align: center;
-  padding: 60px;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
-  border-radius: 10% / 50%;
-  height: 500px;
+  font-family: sans-serif;
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 30px;
+  margin: 0;
 }
 
 select {
-  width: 30%;
+  display: block;
+  width: 100%;
   font-size: 18px;
   border-radius: 5px;
   padding: 10px;
 }
 
-h1 {
-  text-align: center;
-  font-size: 40px;
-}
-
-h2 {
-  font-size: 36px;
-  margin-bottom: 0px;
-}
-
 em {
-  font-size: 15px;
-}
-
-.date {
-  margin: 30px;
-  font-size: 25px;
-}
-
-.circle {
-  border-radius: 50%;
-  width: 34px;
-  height: 34px;
-  padding: 10px;
-  background: #fff;
-  border: 3px solid #000;
-  color: #000;
-  text-align: center;
-  font: 32px Arial, sans-serif;
+  font-size: 12px;
 }
 
 footer {
-  margin-top: 20px;
   text-align: center;
-}
-
-.fa-github {
-  color: #000;
+  margin-top: 20px;
 }
 
 P {
   font-size: 15px;
+  color: rgba(0, 0, 0, 0.19);
 }
 
-small {
-  font-size: 10px;
+.container {
+  max-width: 600px;
+  margin: 60px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.city {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  padding: 30px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.city:last-child {
+  border: none;
+}
+
+.date {
+  opacity: 0.7;
+  font-size: 20px;
+}
+
+.time {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.time small {
+  font-size: 24px;
+  vertical-align: super;
+}
+
+.fa-github {
+  color: #000;
 }
