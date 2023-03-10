@@ -22,44 +22,45 @@
   <body>
     <div class="container">
       <h1>World Clock</h1>
-      <select>
+      <select id="city">
         <option value="">Select a city...</option>
         <option value="">My Location</option>
-        <option value="">Singapore</option>
-        <option value="">Hong Kong</option>
-        <option value="">San Francisco</option>
-        <option value="">Shanghai</option>
-        <option value="">Los Angeles</option>
-        <option value="">Beijing</option>
-        <option value="">Shenzhen</option>
-        <option value="">Paris</option>
-        <option value="">Seoul</option>
-        <option value="">Chicago</option>
-        <option value="">Sydney</option>
-        <option value="">Boston</option>
-        <option value="">Washington, D.C.</option>
-        <option value="">Tokyo</option>
-        <option value="">Dubai</option>
-        <option value="">Frankfurt</option>
-        <option value="">Amsterdam</option>
-        <option value="">Geneva</option>
+        <option value="Africa/Lome">Lome</option>
+        <option value="Africa/Timbuktu">Timbuktu</option>
+        <option value="America/Belize">Belize</option>
+        <option value="Antarctica/Casey">Casey</option>
+        <option value="Antarctica/Syowa">Syowa</option>
+        <option value="Asia/Dili">Dili</option>
+        <option value="Asia/Qatar">Qatar</option>
+        <option value="Atlantic/Bermuda">Bermuda</option>
+        <option value="Atlantic/Faroe">Faroe</option>
+        <option value="Australia/NSW">NSW</option>
+        <option value="Australia/Eucla">Eucla</option>
+        <option value="Europe/San_Marino">San Marino</option>
+        <option value="Indian/Christmas">Christmas</option>
+        <option value="Indian/Mahe">Mahe</option>
+        <option value="Pacific/Galapagos">Doha</option>
+        <option value="Pacific/Yap">Frankfurt</option>
+        <option value="Canada/Yukon">Yukon</option>
+        <option value="Arctic/Longyearbyen">Longyearbyen</option>
       </select>
+      <div id="cities">
+        <div class="city" id="new-york">
+          <div>
+            <h2>New York</h2>
 
-      <div class="city" id="new-york">
-        <div>
-          <h2>New York</h2>
-
-          <div class="date"></div>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
         </div>
-        <div class="time"></div>
-      </div>
-      <div class="city" id="london">
-        <div>
-          <h2>London</h2>
+        <div class="city" id="london">
+          <div>
+            <h2>London</h2>
 
-          <div class="date"></div>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
         </div>
-        <div class="time"></div>
       </div>
     </div>
     <footer>
