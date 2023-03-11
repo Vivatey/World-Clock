@@ -22,6 +22,18 @@ function updateTime() {
       "h:mm:ss [<small>]a[</small>]"
     );
   }
+
+  let kualalumpurElement = document.querySelector("#kuala-lumpur");
+  if (kualalumpurElement) {
+    let kualalumpurDateElement = kualalumpurElement.querySelector(".date");
+    let kualalumpurTimeElement = kualalumpurElement.querySelector(".time");
+    let kualalumpurTime = moment().tz("Asia/kuala_lumpur");
+
+    kualalumpurDateElement.innerHTML = kualalumpurTime.format("ddd, D MMMM YYYY");
+    kualalumpurTimeElement.innerHTML = kualalumpurTime.format(
+      "h:mm:ss [<small>]a[</small>]"
+    );
+  }
 }
 
 function updateCity(event) {

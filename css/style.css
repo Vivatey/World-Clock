@@ -17,8 +17,9 @@ h2 {
 
 select {
   display: block;
+  text-align: center;
   width: 100%;
-  font-size: 20px;
+  font-size: 22px;
   border-radius: 5px;
   padding: 10px;
   font-family: "Italiana", serif;
@@ -82,11 +83,14 @@ footer P {
   opacity: 0.5;
 }
 
-.home {
+.fa-house {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
   color: #000;
 }
 
-.home:hover {
+.fa-house:hover {
   color: grey;
 }
 
