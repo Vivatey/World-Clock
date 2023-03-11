@@ -7,7 +7,7 @@ function updateTime() {
 
     newYorkDateElement.innerHTML = newYorkTime.format("ddd, D MMMM YYYY");
     newYorkTimeElement.innerHTML = newYorkTime.format(
-      "h:mm:ss [<small>]A[</small>]"
+      "h:mm:ss [<small>]a[</small>]"
     );
   }
 
@@ -19,7 +19,7 @@ function updateTime() {
 
     londonDateElement.innerHTML = londonTime.format("ddd, D MMMM YYYY");
     londonTimeElement.innerHTML = londonTime.format(
-      "h:mm:ss [<small>]A[</small>]"
+      "h:mm:ss [<small>]a[</small>]"
     );
   }
 }
@@ -28,7 +28,11 @@ function updateCity(event) {
   let cityTimeZone = event.target.value;
   console.log(cityTimeZone);
 
-  let cityName = cityTimeZone.replace("_", "").split("/")[1];
+  if (cityTimeZone === "current") {
+    cityTimeZone = moment.tz.guess();
+  }
+
+  let cityName = cityTimeZone.replace("_", " ").split("/")[1];
 
   let cityTime = moment().tz(cityTimeZone);
   console.log(cityTime.format("ddd, D MMMM YYYY"));
@@ -39,13 +43,13 @@ function updateCity(event) {
   citiesElement.innerHTML = `
     <div class="city">
           <div>
-            <h2>${cityTimeZone}</h2>
+            <h2>${cityName}</h2>
 
             <div class="date">${cityTime.format("ddd, D MMMM YYYY")}</div>
           </div>
           <div class="time">${cityTime.format(
             "h:mm:ss"
-          )} <small>${cityTime.format("A")}</small></div>
+          )} <small>${cityTime.format("a")}</small></div>
         </div>
     `;
 }
