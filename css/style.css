@@ -82,6 +82,14 @@ footer P {
   opacity: 0.5;
 }
 
+.home {
+  color: #000;
+}
+
+.home:hover {
+  color: grey;
+}
+
 .fa-github {
   color: #000;
 }
